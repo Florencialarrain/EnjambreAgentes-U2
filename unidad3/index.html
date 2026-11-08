@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulso térmico de Santiago</title>
+<style>
+* { box-sizing: border-box; }
+body { margin: 0; padding: 36px 20px; background: #08131e; color: #edf6fb; font: 16px/1.5 system-ui, sans-serif; }
+main { max-width: 720px; margin: auto; }
+h1 { font-size: clamp(2rem, 6vw, 3.3rem); line-height: 1.05; margin: .25em 0; }
+p { color: #bbcddb; }
+.eyebrow { color: #6ae0d2; font-size: .82rem; letter-spacing: .12em; }
+.controls { display: flex; flex-wrap: wrap; gap: 14px; margin: 20px 0; }
+select { background: #142a3b; color: inherit; border: 1px solid #577486; border-radius: 6px; padding: .35em; }
+#estado { padding: 12px; background: #142a3b; border-radius: 8px; color: #edf6fb; }
+canvas { display: block; width: 100% !important; height: auto !important; border: 1px solid #294556; border-radius: 12px; }
+</style>
+<script defer src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.min.js"></script>
+<script defer src="sketch.js"></script>
+</head>
+<body>
+<main>
+  <div class="eyebrow">UNIDAD 3 · SEÑALES DEL MUNDO</div>
+  <h1>Pulso térmico de Santiago</h1>
+  <p>La temperatura del aire controla la distancia a la que los puntos se conectan. A mayor temperatura, mayor alcance.</p>
+  <div class="controls">
+    <label>Fuente <select id="modo"><option value="real">Datos reales</option><option value="simulada">Simulación</option></select></label>
+    <label>Temperatura simulada <select id="temperatura"><option value="12">12 °C</option><option value="26">26 °C</option></select></label>
+  </div>
+  <p id="estado" role="status">Consultando fuente…</p>
+  <div id="enjambre" aria-label="Visualización del enjambre térmico"></div>
+  <p>Los puntos turquesa tienen vecinos. En simulación sus posiciones se fijan para comparar el alcance de los enlaces.</p>
+</main>
+</body>
+</html>

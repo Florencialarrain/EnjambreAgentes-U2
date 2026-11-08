@@ -15,3 +15,7 @@ La comparación de fallas utiliza un dato vencido deliberadamente y una variante
 Las carpetas exploraciones/ conservan los archivos históricos disponibles. BITACORA.md procede de la plantilla de Unidad 2 y no acredita una bitácora completada de Unidad 3.
 
 Fuentes: Open-Meteo https://open-meteo.com/ y p5.js https://p5js.org/.
+
+## Material de apoyo completo
+
+Las subcarpetas de calibración, evidencia, pruebas y exploraciones se distribuyen completas dentro de Entrega_U3_GitHub.zip, en la raíz del repositorio. Para consultar ese material, descargar y descomprimir el paquete. Los archivos index.html y sketch.js de esta carpeta permiten ejecutar el sistema directamente con Live Server.
